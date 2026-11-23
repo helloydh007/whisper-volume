@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">耳语音量</string>
+    <string name="logo_glyph">耳</string>
+    <string name="brand_tagline">WHISPER VOLUME</string>
+    <string name="info_content_desc">使用说明</string>
+
+    <string name="device_bt_active">蓝牙音频输出</string>
+    <string name="device_bt_connected_suffix">%1$s · 已连接</string>
+    <string name="device_bt_connected">蓝牙设备已连接</string>
+    <string name="device_local">本机音频输出</string>
+    <string name="status_on">已开启</string>
+    <string name="status_off">未开启</string>
+
+    <string name="attenuation_running">额外衰减</string>
+    <string name="attenuation_idle">待开启的衰减</string>
+    <string name="original_volume">原始音量</string>
+    <string name="linear_gain">线性增益 %1$s</string>
+    <string name="endpoint_original">原声</string>
+    <string name="endpoint_quietest">极静 %1$s</string>
+    <string name="fine_step_hint">0.5 dB 步进 · 在当前系统音量上继续衰减</string>
+    <string name="preset_soft">轻声</string>
+    <string name="preset_quiet">安静</string>
+    <string name="preset_whisper">耳语</string>
+    <string name="preset_hush">极静</string>
+    <string name="slider_extra_desc">额外衰减，每格 0.5 分贝</string>
+    <string name="slider_system_desc">系统媒体音量</string>
+
+    <string name="power_start">开启耳语音量</string>
+    <string name="power_running">正在运行</string>
+    <string name="power_running_desc">全局衰减 %1$s · 点按停止</string>
+    <string name="power_lost_desc">音效控制被占用 · 点按停止</string>
+    <string name="power_idle_desc">把声音降到系统最低档以下</string>
+    <string name="action_stop">停止</string>
+    <string name="action_start">开启</string>
+    <string name="auto_floor_hint">开启时自动把系统媒体音量降到最低档</string>
+    <string name="system_unchanged_hint">系统音量保持不变</string>
+
+    <string name="section_system_volume">系统音量</string>
+    <string name="section_quick_controls">便捷控制</string>
+    <string name="system_media_volume">系统媒体音量</string>
+    <string name="system_integer_steps">手机提供的整数档位</string>
+    <string name="muted">静音</string>
+    <string name="volume_fraction">%1$d / %2$d</string>
+    <string name="lowest_step">最低档 %1$d/%2$d</string>
+    <string name="go_to_lowest">降到最低档</string>
+    <string name="floor_on_start">启动时降到最低档</string>
+    <string name="floor_on_start_desc">避免系统音量抵消额外衰减</string>
+
+    <string name="overlay_title">悬浮调节条</string>
+    <string name="overlay_desc">在其他应用上方显示 − / + 按钮</string>
+    <string name="overlay_permission_needed">需要先授予“显示在其他应用上层”权限。</string>
+    <string name="overlay_notification_hint">通知栏也可以控制。运行后每次点按“降低 / 提高”调整 3 dB。</string>
+
+    <string name="effect_unavailable_title">额外衰减暂不可用</string>
+    <string name="compat_note_title">兼容模式</string>
+    <string name="compat_note_body">这台手机没有提供精密 DSP，已改用兼容衰减。如果声音没有明显变化，请查看使用说明。</string>
+    <string name="footer_limits">不作用于通话、闹钟和系统提示音。</string>
+    <string name="footer_learn_more">了解原理、蓝牙设置与兼容性  →</string>
+    <string name="footer_version">v1.0.0 · 完全离线</string>
+
+    <string name="about_title">关于耳语音量</string>
+    <string name="about_subtitle">把系统音量管不到的那一段，继续调低。</string>
+    <string name="about_how_title">它如何工作</string>
+    <string name="about_how_body">系统媒体音量只有整数档，最低一档常常仍然偏响。耳语音量会在全局媒体输出上增加一层软件衰减，不改变音频内容，只把电平继续压低，最高可再降低 48 dB。</string>
+    <string name="about_scope_title">支持范围</string>
+    <string name="about_scope_body">音乐、视频、播客等媒体音频，以及蓝牙、有线和扬声器输出。悬浮调节条可以在听歌或看视频时直接调整。</string>
+    <string name="about_limits_title">无法覆盖的声音</string>
+    <string name="about_limits_body">手机通话、闹钟、键盘音和系统提示音走独立音频路径，通常不会被这层衰减影响。这是 Android 的系统限制。</string>
+    <string name="about_bt_title">蓝牙耳机仍然太响？</string>
+    <string-array name="bt_troubleshooting_steps">
+        <item>先确认系统媒体音量已经到最低档。</item>
+        <item>把“额外衰减”拉到 −24 dB 或更低（−36 至 −48 dB）。</item>
+        <item>如果声音完全没有变化，关闭其他均衡器或音量增强应用。</item>
+        <item>换一个本地音乐播放器测试。少数“手机 + 耳机”组合会绕过全局音效。</item>
+        <item>部分耳机需要在开发者选项中开启“停用绝对音量”，然后重新连接耳机。</item>
+    </string-array>
+    <string name="about_privacy_title">隐私</string>
+    <string name="about_privacy_body">应用完全离线，不申请网络权限，也不录制、分析或上传任何音频。</string>
+    <string name="about_close">知道了</string>
+
+    <string name="overlay_caption">耳语音量 · 拖动</string>
+    <string name="overlay_close">关闭悬浮条</string>
+    <string name="overlay_lower_desc">降低 1 分贝</string>
+    <string name="overlay_raise_desc">提高 1 分贝</string>
+
+    <string name="notification_channel_name">微音量运行状态</string>
+    <string name="notification_channel_description">保持低于系统最低档的额外音量衰减</string>
+    <string name="notification_title">耳语音量正在运行</string>
+    <string name="notification_stop">停止</string>
+    <string name="notification_control_lost">全局音效被其他应用占用 · 点按查看</string>
+    <string name="notification_compat">兼容模式 %1$s · 系统音量 %2$s</string>
+    <string name="notification_dsp">精密衰减 %1$s · 系统音量 %2$s</string>
+    <string name="notification_lower">降低 3 dB</string>
+    <string name="notification_raise">提高 3 dB</string>
+
+    <string name="error_global_not_allowed">这台手机暂时不允许应用接入全局音频输出。</string>
+    <string name="error_effect_occupied">全局音频效果被另一个应用占用了。请关闭其他均衡器或音量应用。</string>
+    <string name="error_adjust_failed">调整音量失败，请重新启动微音量。</string>
+</resources>

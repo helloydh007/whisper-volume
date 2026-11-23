@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Whisper Volume</string>
+    <string name="logo_glyph">W</string>
+    <string name="brand_tagline">WHISPER VOLUME</string>
+    <string name="info_content_desc">How it works</string>
+
+    <string name="device_bt_active">Bluetooth audio output</string>
+    <string name="device_bt_connected_suffix">%1$s · Connected</string>
+    <string name="device_bt_connected">Bluetooth device connected</string>
+    <string name="device_local">Phone audio output</string>
+    <string name="status_on">On</string>
+    <string name="status_off">Off</string>
+
+    <string name="attenuation_running">Extra attenuation</string>
+    <string name="attenuation_idle">Selected attenuation</string>
+    <string name="original_volume">Original volume</string>
+    <string name="linear_gain">Linear gain %1$s</string>
+    <string name="endpoint_original">Original</string>
+    <string name="endpoint_quietest">Quietest %1$s</string>
+    <string name="fine_step_hint">0.5 dB steps · attenuates below the current system volume</string>
+    <string name="preset_soft">Soft</string>
+    <string name="preset_quiet">Quiet</string>
+    <string name="preset_whisper">Whisper</string>
+    <string name="preset_hush">Hush</string>
+    <string name="slider_extra_desc">Extra attenuation, 0.5 decibels per step</string>
+    <string name="slider_system_desc">System media volume</string>
+
+    <string name="power_start">Turn on Whisper Volume</string>
+    <string name="power_running">Running</string>
+    <string name="power_running_desc">Global attenuation %1$s · tap to stop</string>
+    <string name="power_lost_desc">Audio control is busy · tap to stop</string>
+    <string name="power_idle_desc">Take sound below the lowest system step</string>
+    <string name="action_stop">Stop</string>
+    <string name="action_start">Start</string>
+    <string name="auto_floor_hint">System media volume is set to its lowest step on start</string>
+    <string name="system_unchanged_hint">System volume is left unchanged</string>
+
+    <string name="section_system_volume">System volume</string>
+    <string name="section_quick_controls">Quick controls</string>
+    <string name="system_media_volume">System media volume</string>
+    <string name="system_integer_steps">Integer steps provided by the phone</string>
+    <string name="muted">Muted</string>
+    <string name="volume_fraction">%1$d / %2$d</string>
+    <string name="lowest_step">Lowest step %1$d/%2$d</string>
+    <string name="go_to_lowest">Set to lowest</string>
+    <string name="floor_on_start">Set to lowest on start</string>
+    <string name="floor_on_start_desc">Avoid system volume cancelling the attenuation</string>
+
+    <string name="overlay_title">Floating controls</string>
+    <string name="overlay_desc">Show − / + above other apps</string>
+    <string name="overlay_permission_needed">Grant the display-over-other-apps permission first.</string>
+    <string name="overlay_notification_hint">Notification controls are also available. While running, each tap adjusts by 3 dB.</string>
+
+    <string name="effect_unavailable_title">Extra attenuation is unavailable</string>
+    <string name="compat_note_title">Compatibility mode</string>
+    <string name="compat_note_body">This phone does not expose precise DSP, so a compatibility fallback is active. If you hear no change, see the usage notes.</string>
+    <string name="footer_limits">Does not affect calls, alarms, or system UI sounds.</string>
+    <string name="footer_learn_more">How it works, Bluetooth tips and compatibility  →</string>
+    <string name="footer_version">v1.0.0 · Fully offline</string>
+
+    <string name="about_title">About Whisper Volume</string>
+    <string name="about_subtitle">Take the volume below the step where the system stops.</string>
+    <string name="about_how_title">How it works</string>
+    <string name="about_how_body">Android media volume has only integer steps, and the lowest step is often still loud. Whisper Volume adds a software attenuation layer to the global media output. It does not alter the audio content; it only lowers the level, by up to another 48 dB.</string>
+    <string name="about_scope_title">What it covers</string>
+    <string name="about_scope_body">Music, video, podcasts and other media, over Bluetooth, wired output or the phone speaker. The floating strip lets you adjust while watching or listening in another app.</string>
+    <string name="about_limits_title">What it cannot cover</string>
+    <string name="about_limits_body">Phone calls, alarms, keyboard sounds and system UI sounds usually take separate audio paths and are not affected. This is an Android platform limitation.</string>
+    <string name="about_bt_title">Bluetooth still too loud?</string>
+    <string-array name="bt_troubleshooting_steps">
+        <item>Make sure the system media volume is already at its lowest step.</item>
+        <item>Move Extra attenuation to −24 dB or lower (−36 to −48 dB).</item>
+        <item>If nothing changes at all, close other equalizer or volume-booster apps.</item>
+        <item>Try a local music player. A few phone and headset combinations bypass global audio effects.</item>
+        <item>Some headsets need Disable absolute volume enabled in Developer options, followed by a reconnect.</item>
+    </string-array>
+    <string name="about_privacy_title">Privacy</string>
+    <string name="about_privacy_body">The app is fully offline. It has no network permission and never records, analyses, or uploads audio.</string>
+    <string name="about_close">Got it</string>
+
+    <string name="overlay_caption">Whisper Volume · drag</string>
+    <string name="overlay_close">Close floating controls</string>
+    <string name="overlay_lower_desc">Lower by 1 decibel</string>
+    <string name="overlay_raise_desc">Raise by 1 decibel</string>
+
+    <string name="notification_channel_name">Whisper Volume status</string>
+    <string name="notification_channel_description">Keeps the extra attenuation below the system minimum</string>
+    <string name="notification_title">Whisper Volume is running</string>
+    <string name="notification_stop">Stop</string>
+    <string name="notification_control_lost">Global audio effect is busy · tap to view</string>
+    <string name="notification_compat">Compatibility mode %1$s · system volume %2$s</string>
+    <string name="notification_dsp">Precise attenuation %1$s · system volume %2$s</string>
+    <string name="notification_lower">Lower 3 dB</string>
+    <string name="notification_raise">Raise 3 dB</string>
+
+    <string name="error_global_not_allowed">This phone does not allow apps to attach a global audio effect right now.</string>
+    <string name="error_effect_occupied">Another app is holding the global audio effect. Close other equalizer or volume apps.</string>
+    <string name="error_adjust_failed">Could not adjust the volume. Restart Whisper Volume.</string>
+</resources>
